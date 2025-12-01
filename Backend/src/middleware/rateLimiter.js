@@ -3,8 +3,8 @@ import rateLimit from "../config/uptash.js";
 export const rateLimiter = async (req, res, next) => {
   try {
     const { userId } = req.params;
-    const { result } = await rateLimit.limit(userId);
-    if (!result.success) {
+    const { success } = await rateLimit.limit(userId);
+    if (!success) {
       return res.status(429).json({ message: "Too many requests" });
     }
     next();
