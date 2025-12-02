@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         marginBottom: 20,
-        paddingHorizontal: 0,
+        paddingHorizontal: 20,
         paddingVertical: 12,
     },
     headerLeft: {
@@ -29,6 +29,7 @@ export const styles = StyleSheet.create({
     },
     welcomeContainer: {
         flex: 1,
+        // paddingHorizontal: 20,
     },
     welcomeText: {
         fontSize: 14,
